@@ -9,15 +9,11 @@
   }
 
   .bg{
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../src/assets/bg-image.jpg');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../src/Images/bg-image.jpg');
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     height: 86vh;
-  }
-
-  .product-list {
-    /* Add styles for the overall product list container here */
   }
   
   .product-grid {

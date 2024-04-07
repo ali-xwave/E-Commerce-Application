@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import "../src/assets/css/bootstrap.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProductDetails from "./components/ProductDetails";
 import Header from "./components/Header";
