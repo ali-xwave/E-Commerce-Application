@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: lighter;
+    padding: 0 10px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .text-style{
+    margin: 0 0 0 30px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .bg{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../src/assets/bg-image.jpg');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 86vh;
   }
-}
+
+  .product-list {
+    /* Add styles for the overall product list container here */
+  }
+  
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute items evenly */
+    margin: 0 -10px; /* Remove horizontal margin from items */
+  }
+  
+  .product-item {
+    width: calc(33.33% - 20px); /* Calculate width for 3 items per row */
+    margin: 10px;
+    border: 1px solid #ddd; /* Optional border for each item */
+    text-align: center; /* Center product details */
+  }
+  
+  .product-item img {
+    max-width: 100%; /* Ensure images fill the available space */
+    /* Add other image styles as needed */
+    height: 300px;
+  }
+  @media (min-width: 150px) and (max-width: 576px) {
+    .text-style {
+      margin: 0 0 0 10px;
+    }
+    ul li a{
+        padding: 20px 0;
+    }
+    .image{
+        width: 100%;
+    }
+    .product-item {
+        width: calc(50% - 20px);
+      }
+  }
+  @media (min-width: 577px) and (max-width: 768px) {
+    .text-style {
+      margin: 0 0 0 10px;
+    }
+    ul li a{
+        padding: 0;
+    }
+  }
+  @media (min-width: 769px) and (max-width: 992px) {
+    .text-style {
+      margin: 0 0 0 10px;
+    }
+    ul li a{
+        padding: 0;
+    }
+  }
+
+  
